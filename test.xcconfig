@@ -1,0 +1,23 @@
+//
+//  Config.xcconfig
+//  SUPAY
+//
+//  Created by LeiQiao on 15/9/24.
+//  Copyright © 2015年 chinapnr.com. All rights reserved.
+//
+
+// 证书相关
+
+PROVISIONING_PROFILE = 420dae1e-20b4-46fc-9e21-eb69d208dff9
+
+CODE_SIGN_IDENTITY = iPhone Distribution: Shanghai Pnr Financial Services Co., Ltd.
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution: Shanghai Pnr Financial Services Co., Ltd.
+
+PRODUCT_BUNDLE_IDENTIFIER = com.chinapnr.MDP2
+
+// 测试环境
+ENVIRONMENT_TEST = 1
+
+// 程序名称
+PRODUCT_BUNDLE_NAME = 语音采集
+
