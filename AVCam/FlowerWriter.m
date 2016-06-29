@@ -364,7 +364,7 @@
     [requestObject setObject:videoName forKey:@"file_name"];
     [requestObject setObject:[[NSString alloc] initWithData:[videoData base64EncodedDataWithOptions:0] encoding:NSUTF8StringEncoding]  forKey:@"file_content"];
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.3.41:8890/upload"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://data.chinapnr.com/asrapi/upload"]];
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField: @"Content-Type"];
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:requestObject options:0 error:nil];

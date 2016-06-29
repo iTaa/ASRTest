@@ -72,7 +72,7 @@
     [requestObject setObject:@"test" forKey:@"file_name"];
     [requestObject setObject:@"0001"  forKey:@"file_content"];
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.3.41:8890/upload"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://data.chinapnr.com/asrapi/upload"]];
     request.timeoutInterval = 1;
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField: @"Content-Type"];
@@ -92,6 +92,7 @@
         } else {
             AAPLCameraViewController *aac = [self.storyboard instantiateViewControllerWithIdentifier:@"AAPLCameraViewController"];
             aac.userName = self.userNameTextField.text;
+            [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStyleDone target:self action:nil]];
             [self.navigationController pushViewController:aac animated:YES];
         }
         
