@@ -19,6 +19,7 @@
 		918158BA1D1BC1980045C5BE /* FlowerWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 918158B91D1BC1980045C5BE /* FlowerWriter.m */; };
 		918158BD1D1BC1AD0045C5BE /* UserNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 918158BC1D1BC1AD0045C5BE /* UserNameViewController.m */; };
 		918158BF1D1BC1E60045C5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918158BE1D1BC1E60045C5BE /* Main.storyboard */; };
+		9184DB511D239BE2004F6591 /* guide_voice.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9184DB501D239BE2004F6591 /* guide_voice.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		918158BB1D1BC1AD0045C5BE /* UserNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNameViewController.h; sourceTree = "<group>"; };
 		918158BC1D1BC1AD0045C5BE /* UserNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameViewController.m; sourceTree = "<group>"; };
 		918158BE1D1BC1E60045C5BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9184DB501D239BE2004F6591 /* guide_voice.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = guide_voice.m4a; sourceTree = "<group>"; };
 		EDCEC49A85025F6F6C682F9F /* Pods-AVCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVCam.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVCam/Pods-AVCam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 		2206265C1A1E330400A45150 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9184DB501D239BE2004F6591 /* guide_voice.m4a */,
 				918158B21D1BC1460045C5BE /* guide_voice.mp3 */,
 				2206265D1A1E330400A45150 /* Info.plist */,
 				2206265E1A1E330400A45150 /* main.m */,
@@ -197,6 +200,7 @@
 			files = (
 				918158B31D1BC1460045C5BE /* guide_voice.mp3 in Resources */,
 				22CA31B81B022D1300D2DE70 /* Launch Screen.storyboard in Resources */,
+				9184DB511D239BE2004F6591 /* guide_voice.m4a in Resources */,
 				2206266A1A1E330400A45150 /* Images.xcassets in Resources */,
 				918158BF1D1BC1E60045C5BE /* Main.storyboard in Resources */,
 			);

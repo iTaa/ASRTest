@@ -96,7 +96,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 
 	self.setupResult = AVCamSetupResultSuccess;
 	// 要播放的音频文件地址
-	NSString *urlPath = [[NSBundle mainBundle] pathForResource:@"guide_voice" ofType:@"mp3"];
+	NSString *urlPath = [[NSBundle mainBundle] pathForResource:@"guide_voice" ofType:@"m4a"];
 	NSURL *url = [NSURL fileURLWithPath:urlPath];
 	// 声明需要播放的音频文件ID[unsigned long]
 	SystemSoundID ID = 88880001;
@@ -548,7 +548,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
         if (!weakSelf.flowerWriter.isRecording) {
 			//生成数字数组
 			self.digitalArray = [NSMutableArray array];
-			for (int i = 0; i < 8; i++) {
+			for (int i = 0; i < 6; i++) {
 				[self.digitalArray addObject:[NSString stringWithFormat:@"%d",arc4random() % 10]];
 			}
 			self.flowerWriter.digitalQueue = self.digitalArray;
@@ -915,10 +915,10 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 -(void) refrushDigital{
 	
     
-    if (_digitalQueue.text.length < 16){
+    if (_digitalQueue.text.length < 12){
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([_randomDigital.text isEqualToString:@" "]) {
-				if(_digitalQueue.text.length < 16){
+				if(_digitalQueue.text.length < 12){
 					_randomDigital.text = _digitalArray[_index]; // 10以内的数字
 					_index++;
 				}

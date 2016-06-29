@@ -285,7 +285,7 @@
     NSString *videoName = self.videoName;
     
     NSString *content = @"";
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 6; i++) {
         if (i == 0) {
             content = _digitalQueue[i];
         } else {
