@@ -72,7 +72,7 @@
     [requestObject setObject:@"test" forKey:@"file_name"];
     [requestObject setObject:@"0001"  forKey:@"file_content"];
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.3.88:8890/upload"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.3.41:8890/upload"]];
     request.timeoutInterval = 1;
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField: @"Content-Type"];
@@ -86,7 +86,7 @@
         dismissWaiting();
         NSLog(@"----%@----",response);
         NSLog(@"----%@----",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-        if (connectionError) {
+        if (![[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] isEqualToString:@"ok"]) {
             NSLog(@"----%@----",connectionError);
             popError(@"网络异常！请确保使用WIFI链接");
         } else {
