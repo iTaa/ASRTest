@@ -46,7 +46,7 @@
 
 
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    if (textField.text.length > 5) {
+    if (textField.text.length > 3) {
         self.okButton.enabled = YES;
         [self.okButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
         
